@@ -85,7 +85,7 @@ img {
     background-image: url('../img/bear-2382779_1920.jpg');
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;  /* Efecto Parallax hace que se mueva la imagen */ 
+    /* background-attachment: fixed;   Efecto Parallax hace que se mueva la imagen */ 
 }
 
 .col1 {
@@ -215,7 +215,7 @@ header nav ul li {
     background-image: url('../img/web 1920.jpg');
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;   /* Esta propiedad hace que se mueva el contenido de la página pero no la imagen que tenemos de fondo */
+    /* background-attachment: fixed;    Esta propiedad hace que se mueva el contenido de la página pero no la imagen que tenemos de fondo */
     display: flex; /* alinear en el sentido de la x */
     flex-direction: column;
     justify-content: flex-end;
@@ -418,6 +418,13 @@ footer a.activo {
 
 /* Media Queries */
 
+@media (min-width: 1280px) {
+
+    .hero, .fondo {
+        background-attachment: fixed;
+    }
+}
+
 @media (max-width: 720px) {
     .fila {
         display: flex;
@@ -446,10 +453,7 @@ footer a.activo {
     nav {
         display: none;
     }
-    .hero {
-        background-attachment: scroll;
-    }
-
+ 
     .hero h1 {
         font-size: 36px;
         text-align: center; 
@@ -478,6 +482,10 @@ footer a.activo {
     .izdo, .centro, .dcho {
         flex-basis: 200px;
     }
+
+    .legales p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -505,5 +513,4 @@ footer a.activo {
         text-align: center;
         margin-top: 20px;
     }
-
 }
