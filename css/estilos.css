@@ -425,6 +425,13 @@ footer a.activo {
     }
 }
 
+@media (orientation: landscape) {
+
+    .hero, .fondo {
+        background-size: contain;
+    }
+}
+
 @media (max-width: 720px) {
     .fila {
         display: flex;
@@ -484,6 +491,10 @@ footer a.activo {
     }
 
     .legales p {
+        font-size: 12px;
+    }
+
+    .legales ul li {
         font-size: 12px;
     }
 }
