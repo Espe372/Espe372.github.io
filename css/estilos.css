@@ -446,6 +446,9 @@ footer a.activo {
     nav {
         display: none;
     }
+    .hero {
+        background-attachment: scroll;
+    }
 
     .hero h1 {
         font-size: 36px;
